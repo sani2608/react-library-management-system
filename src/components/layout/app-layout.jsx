@@ -35,6 +35,7 @@ export const AppLayout = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+    navigate("/");
   };
 
   const handleLoginSubmit = (username, password) => {

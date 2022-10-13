@@ -134,15 +134,15 @@ export const AppLayout = () => {
       </AppBar>
       <Routes>
         <Route path="/books" exact element={<BooksList />} />
-        {/* <Route
+        <Route
           path="/books/:bookIsbn"
           element={
             <WithLoginProtector>
               <Book />
             </WithLoginProtector>
           }
-        /> */}
-        {/* <Route
+        />
+        <Route
           path="/admin/books/add"
           element={
             <WithLoginProtector>
@@ -152,7 +152,7 @@ export const AppLayout = () => {
             </WithLoginProtector>
           }
           exact
-        /> */}
+        />
         {/* <Route
           path="/admin/books/:bookIsbn/edit"
           element={
@@ -163,7 +163,7 @@ export const AppLayout = () => {
             </WithLoginProtector>
           }
         /> */}
-        {/* <Route path="*" element={<Navigate to="/books" replace />} /> */}
+        <Route path="*" element={<Navigate to="/books" replace />} />
       </Routes>
       <LoginDialog
         open={openLoginDialog}

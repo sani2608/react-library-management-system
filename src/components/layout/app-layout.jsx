@@ -153,7 +153,7 @@ export const AppLayout = () => {
           }
           exact
         />
-        {/* <Route
+        <Route
           path="/admin/books/:bookIsbn/edit"
           element={
             <WithLoginProtector>
@@ -162,7 +162,7 @@ export const AppLayout = () => {
               </WithAdminProtector>
             </WithLoginProtector>
           }
-        /> */}
+        />
         <Route path="*" element={<Navigate to="/books" replace />} />
       </Routes>
       <LoginDialog

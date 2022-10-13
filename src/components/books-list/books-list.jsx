@@ -154,6 +154,7 @@ export const BooksList = () => {
               page={page}
               onPageChange={(e, newPage) => setPage(newPage)}
             />
+            {/* warning dialog  */}
             <Modal open={openModal} onClose={(e) => setOpenModal(false)}>
               <Card className={classes.conf_modal}>
                 <CardContent>
